@@ -48,6 +48,8 @@
                     if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
                         let dadosJsonText = xmlHttp.responseText
                         let dadosJasonObj = JSON.parse(dadosJsonText)
+                        document.getElementById('endereco').value = dadosJasonObj.lodadouro
+                        document.getElementById('bairro').value = dadosJasonObj.bairro
 
                         console.log(dadosJasonObj)
 
