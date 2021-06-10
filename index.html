@@ -44,6 +44,15 @@
                 let xmlHttp = new XMLHttpRequest()
                 xmlHttp.open('GET',url)
 
+                xmlHttp.onreadystatechange = function(){
+                    if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+                        let dadosJsonText = xmlHttp.responseText
+
+                    }
+                }
+
+                xmlHttp.send()
+
             }
         </script>
 	</body>
