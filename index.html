@@ -47,6 +47,7 @@
                 xmlHttp.onreadystatechange = function(){
                     if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
                         let dadosJsonText = xmlHttp.responseText
+                        let dadosJasonObj = JSON.parse(dadosJsonText)
 
                     }
                 }
