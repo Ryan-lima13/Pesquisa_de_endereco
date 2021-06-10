@@ -48,7 +48,7 @@
                     if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
                         let dadosJsonText = xmlHttp.responseText
                         let dadosJasonObj = JSON.parse(dadosJsonText)
-                        document.getElementById('endereco').value = dadosJasonObj.lodadouro
+                        document.getElementById('endereco').value = dadosJasonObj.logradouro
                         document.getElementById('bairro').value = dadosJasonObj.bairro
                         document.getElementById('cidade').value = dadosJasonObj.localidade
                         document.getElementById('estado').value = dadosJasonObj.uf
