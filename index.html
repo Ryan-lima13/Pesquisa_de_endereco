@@ -50,7 +50,8 @@
                         let dadosJasonObj = JSON.parse(dadosJsonText)
                         document.getElementById('endereco').value = dadosJasonObj.lodadouro
                         document.getElementById('bairro').value = dadosJasonObj.bairro
-                        document.getElementById('endereco').value = dadosJasonObj.lodadouro
+                        document.getElementById('cidade').value = dadosJasonObj.localidade
+                        document.getElementById('estado').value = dadosJasonObj.uf
 
                         console.log(dadosJasonObj)
 
